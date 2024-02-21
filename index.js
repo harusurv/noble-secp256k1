@@ -511,5 +511,5 @@ const wNAF = (n) => {
     }
     return { p, f }; // return both real and fake points for JIT
 }; // !! you can disable precomputes by commenting-out call of the wNAF() inside Point#mul()
-export { getPublicKey, sign, signAsync, verify, CURVE, // Remove the export to easily use in REPL
-getSharedSecret, etc, utils, Point as ProjectivePoint, Signature }; // envs like browser console
+module.exports = { getPublicKey, sign, signAsync, verify, CURVE, // Remove the export to easily use in REPL
+getSharedSecret, etc, utils, Point, Signature }; // envs like browser console
